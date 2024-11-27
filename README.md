@@ -4,7 +4,7 @@
 
 # Live Demo
 
-Live Demo
+[Live Demo](https://strawstack.github.io/LoadState/)
 
 # How to use
 
