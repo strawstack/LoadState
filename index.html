@@ -10,8 +10,9 @@
 
 
     <!-- Just Import and Configure -->
-    <script src="loadState.js"></script>
-    <script>
+    <script type="module" src="loadState.js"></script>
+    <script type="module">
+      import { loadState } from './loadState.js';
       loadState({ 
         save: () => {
           return JSON.stringify({key: "example save data"})
