@@ -11,14 +11,15 @@
 Import and configure `loadState.js` as seen below and in `index.html`.
 
 ```html
-<script src="loadState.js"></script>
-<script>
-    loadState({ 
+<script type="module" src="loadState.js"></script>
+<script type="module">
+  import { loadState } from './loadState.js';
+  loadState({ 
     save: () => {
-        return JSON.stringify({key: "example save data"})
+      return JSON.stringify({key: "example save data"})
     }, 
     load: (data) => console.log(`Loaded: ${data}`)
-    });
+  });
 </script>
 ```
 
