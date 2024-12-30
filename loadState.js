@@ -1,4 +1,4 @@
-function loadState({ menuName, downloadFileNameExt, save, load}) {
+export function loadState({ menuName, downloadFileNameExt, save, load}) {
 
     if (menuName === undefined) menuName = "loadState";
     if (downloadFileNameExt === undefined) downloadFileNameExt = "save.json";
